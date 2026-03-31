@@ -26,8 +26,10 @@ This project analyzes happiness scores across 156 countries using the 2019 World
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=python&logoColor=white)
 ![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=flat-square&logo=python&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 
 ## How to Run
 1. Clone the repository: `git clone https://github.com/BronsonBagwell/World_Happiness.git`
-2. Install dependencies: `pip install pandas matplotlib seaborn scikit-learn`
+2. Install dependencies: `pip install pandas matplotlib seaborn scikit-learn plotly numpy`
 3. Open and run the Jupyter notebook, or [view on Kaggle](https://www.kaggle.com/code/bronsonb/happiness-score-2019-eda-prediction)
