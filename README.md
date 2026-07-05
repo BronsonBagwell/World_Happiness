@@ -11,12 +11,14 @@ This project analyzes happiness scores across 156 countries using the 2019 World
 
 ## Methods
 - Exploratory data analysis with correlation heatmaps, distribution plots, and scatter plots
+- Continent one-hot encoded as a nominal feature (not arbitrary integer codes)
 - Linear Regression for baseline predictive modeling
-- Random Forest Regression for improved prediction accuracy
+- Random Forest Regression as a nonlinear comparison
+- 5-fold cross-validation alongside a single 70/30 split
 - Feature importance analysis to identify top predictors
 
 ## Key Findings
-- **Random Forest outperformed Linear Regression:** R² = 0.725 vs. R² = 0.687
+- **The two models performed comparably:** Linear Regression R² = 0.718 vs. Random Forest R² = 0.716 on a 70/30 test split (5-fold CV R² ≈ 0.38 and 0.41, respectively)
 - **Top predictors of happiness:** GDP per capita, social support, and healthy life expectancy
 - Strong positive correlations between economic indicators and happiness scores across regions
 
@@ -31,5 +33,5 @@ This project analyzes happiness scores across 156 countries using the 2019 World
 
 ## How to Run
 1. Clone the repository: `git clone https://github.com/BronsonBagwell/World_Happiness.git`
-2. Install dependencies: `pip install pandas matplotlib seaborn scikit-learn plotly numpy`
+2. Install dependencies: `pip install pandas matplotlib seaborn scikit-learn plotly numpy statsmodels`
 3. Open and run the Jupyter notebook, or [view on Kaggle](https://www.kaggle.com/code/bronsonb/happiness-score-2019-eda-prediction)
