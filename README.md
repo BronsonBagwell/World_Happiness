@@ -14,11 +14,12 @@ This project analyzes happiness scores across 156 countries using the 2019 World
 - Continent one-hot encoded as a nominal feature (not arbitrary integer codes)
 - Linear Regression for baseline predictive modeling
 - Random Forest Regression as a nonlinear comparison
-- 5-fold cross-validation alongside a single 70/30 split
+- Shuffled 5-fold cross-validation alongside a single 70/30 split, plus an unshuffled (continent-block) CV as a contrast
 - Feature importance analysis to identify top predictors
 
 ## Key Findings
-- **The two models performed comparably:** Linear Regression R² = 0.718 vs. Random Forest R² = 0.716 on a 70/30 test split (5-fold CV R² ≈ 0.38 and 0.41, respectively)
+- **The two models performed comparably:** Linear Regression R² = 0.718 vs. Random Forest R² = 0.716 on a 70/30 test split; shuffled 5-fold CV R² ≈ 0.77 and 0.79, respectively
+- **Continent blocks matter:** unshuffled 5-fold CV on the continent-sorted rows (effectively leave-continent-blocks-out) drops to R² ≈ 0.38 and 0.41, showing the models generalize far less well to continents they were never trained on
 - **Top predictors of happiness:** GDP per capita, social support, and healthy life expectancy
 - Strong positive correlations between economic indicators and happiness scores across regions
 
